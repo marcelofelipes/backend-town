@@ -1,0 +1,102 @@
+{
+  // ========== Visuals ==========
+  "workbench.colorTheme": "Vitesse Dark",
+  "workbench.preferredDarkColorTheme": "Vitesse Dark",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.productIconTheme": "icons-carbon",
+  "workbench.sideBar.location": "left",
+  "workbench.tree.indent": 10,
+  "workbench.fontAliasing": "antialiased",
+  "workbench.startupEditor": "newUntitledFile",
+  
+  "workbench.colorCustomizations": {
+    "[Vitesse Dark]": {
+      "editor.selectionBackground": "#33415555",
+      "editor.lineHighlightBackground": "#1e293b50",
+      "editorCursor.foreground": "#e2e8f0",
+      "sideBar.background": "#0f172a",
+      "sideBar.border": "#1e293b"
+    }
+  },
+
+  "editor.fontFamily": "JetBrains Mono, Input Mono, monospace",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "400",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.guides.bracketPairs": "active",
+  "editor.lineNumbers": "interval",
+  "editor.renderWhitespace": "boundary",
+  "editor.stickyScroll.enabled": true,
+  "editor.hover.sticky": true,
+
+  // ========== Performance ==========
+  "window.titleBarStyle": "native",
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "smooth",
+  "workbench.list.smoothScrolling": true,
+
+  // ========== Editor ==========
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "editor.tabSize": 2,
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggestSelection": "first",
+
+  // ========== Terminal ==========
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontWeight": "300",
+
+  // ========== File Management ==========
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  
+  // ========== File Nesting Simplificado ==========
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.spec.ts, ${capture}.test.ts",
+    "*.vue": "${capture}.scss, ${capture}.ts",
+    "package.json": "pnpm-lock.yaml, .npmrc, .nvmrc",
+    "index.html": "favicon.ico, robots.txt",
+    "tsconfig.json": "tsconfig.*.json"
+  },
+
+  // ========== Extensões ==========
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "recommendations": [
+    "antfu.iconify",
+    "catppuccin.catppuccin-vsc",
+    "vue.volar",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint"
+  ],
+
+  // ========== Git ==========
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+
+  // ========== Search ==========
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.git": true,
+    "**/.vscode": true,
+    "**/package-lock.json": true
+  },
+
+  // ========== Advanced ==========
+  "window.autoDetectColorScheme": true,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "debug.onTaskErrors": "debugAnyway",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.limit.value": 5
+}
