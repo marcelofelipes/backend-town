@@ -23,12 +23,9 @@ importers:
       '@nestjs/swagger':
         specifier: ^11.1.4
         version: 11.1.4(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.20)(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)
-      class-transformer:
-        specifier: ^0.5.1
-        version: 0.5.1
-      class-validator:
-        specifier: ^0.14.1
-        version: 0.14.1
+      '@prisma/client':
+        specifier: ^6.6.0
+        version: 6.6.0(prisma@6.6.0(typescript@5.8.3))(typescript@5.8.3)
       reflect-metadata:
         specifier: ^0.2.2
         version: 0.2.2
@@ -51,9 +48,6 @@ importers:
       '@nestjs/testing':
         specifier: ^11.0.1
         version: 11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.20)(@nestjs/platform-express@11.0.20)
-      '@prisma/client':
-        specifier: 6.6.0
-        version: 6.6.0(prisma@6.6.0(typescript@5.8.3))(typescript@5.8.3)
       '@swc/cli':
         specifier: ^0.6.0
         version: 0.6.0(@swc/core@1.11.21)(chokidar@4.0.3)
@@ -90,9 +84,6 @@ importers:
       prettier:
         specifier: ^3.4.2
         version: 3.5.3
-      prisma:
-        specifier: 6.6.0
-        version: 6.6.0(typescript@5.8.3)
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
@@ -4141,10 +4132,13 @@ snapshots:
       esbuild-register: 3.6.0(esbuild@0.25.2)
     transitivePeerDependencies:
       - supports-color
+    optional: true
 
-  '@prisma/debug@6.6.0': {}
+  '@prisma/debug@6.6.0':
+    optional: true
 
-  '@prisma/engines-version@6.6.0-53.f676762280b54cd07c770017ed3711ddde35f37a': {}
+  '@prisma/engines-version@6.6.0-53.f676762280b54cd07c770017ed3711ddde35f37a':
+    optional: true
 
   '@prisma/engines@6.6.0':
     dependencies:
@@ -4152,16 +4146,19 @@ snapshots:
       '@prisma/engines-version': 6.6.0-53.f676762280b54cd07c770017ed3711ddde35f37a
       '@prisma/fetch-engine': 6.6.0
       '@prisma/get-platform': 6.6.0
+    optional: true
 
   '@prisma/fetch-engine@6.6.0':
     dependencies:
       '@prisma/debug': 6.6.0
       '@prisma/engines-version': 6.6.0-53.f676762280b54cd07c770017ed3711ddde35f37a
       '@prisma/get-platform': 6.6.0
+    optional: true
 
   '@prisma/get-platform@6.6.0':
     dependencies:
       '@prisma/debug': 6.6.0
+    optional: true
 
   '@rollup/pluginutils@5.1.4(rollup@4.40.0)':
     dependencies:
@@ -4415,7 +4412,8 @@ snapshots:
       '@types/methods': 1.1.4
       '@types/superagent': 8.1.9
 
-  '@types/validator@13.15.0': {}
+  '@types/validator@13.15.0':
+    optional: true
 
   '@typescript-eslint/eslint-plugin@8.30.1(@typescript-eslint/parser@8.30.1(eslint@9.24.0)(typescript@5.8.3))(eslint@9.24.0)(typescript@5.8.3)':
     dependencies:
@@ -4949,13 +4947,15 @@ snapshots:
 
   chrome-trace-event@1.0.4: {}
 
-  class-transformer@0.5.1: {}
+  class-transformer@0.5.1:
+    optional: true
 
   class-validator@0.14.1:
     dependencies:
       '@types/validator': 13.15.0
       libphonenumber-js: 1.12.7
       validator: 13.15.0
+    optional: true
 
   cli-cursor@3.1.0:
     dependencies:
@@ -5243,6 +5243,7 @@ snapshots:
       esbuild: 0.25.2
     transitivePeerDependencies:
       - supports-color
+    optional: true
 
   esbuild@0.25.2:
     optionalDependencies:
@@ -5985,7 +5986,8 @@ snapshots:
       prelude-ls: 1.2.1
       type-check: 0.4.0
 
-  libphonenumber-js@1.12.7: {}
+  libphonenumber-js@1.12.7:
+    optional: true
 
   lines-and-columns@1.2.4: {}
 
@@ -6286,6 +6288,7 @@ snapshots:
       typescript: 5.8.3
     transitivePeerDependencies:
       - supports-color
+    optional: true
 
   process-nextick-args@2.0.1: {}
 
@@ -6968,7 +6971,8 @@ snapshots:
 
   v8-compile-cache-lib@3.0.1: {}
 
-  validator@13.15.0: {}
+  validator@13.15.0:
+    optional: true
 
   vary@1.1.2: {}
 
